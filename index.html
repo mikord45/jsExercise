@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="main">
+        <table id="mainTab">
+            <tr id="titleRow">
+                <td>Student Name</td>
+                <td>Student ID</td>
+                <td>Assignment 1</td>
+                <td>Assignment 2</td>
+                <td>Assignment 3</td>
+                <td>Assignment 4</td>
+                <td>Assignment 5</td>
+                <td id="result">Average[%]</td>
+            </tr>
+        </table>
+        <button id="newStudent">Dodaj nowego ucznia</button>
+        <button id="newAssignment">Dodaj nową ocenę</button>
+        <button id="back">Przywróć dane</button>
+        <p id="unsubmitted"></p>
+        <label>Podaj ID wiersza do usunięcia </label><select id="IdToDelete"></select>
+        <button id="btToDeleteSelectedRow">Usun wiersz</button>
+        <br />
+        <label>Podaj numer kolumny do usunięcia </label><select id="IdToDeleteColumn"></select>
+        <button id="btToDeleteSelectedColumn">Usun kolumne</button>
+        <br />
+        <button id="undo">Cofnij ostatnią akcję</button>
+    </div>
+    <script src="person.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
